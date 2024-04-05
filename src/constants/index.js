@@ -24,14 +24,14 @@ export const hero = [
   {
     id: "0",
     text: "A PLANETERIUM SPACE",
-    className: "font-thunder text-8xl uppercase tracking-wide mt-6 ml-15",
+    class: "font-thunder text-8xl uppercase tracking-wide mt-6 ml-15",
     transition: "fade-left",
     delay: "300",
   },
   {
-    id: "0",
+    id: "1",
     text: "FOR DEVELOPERS",
-    className: "font-thunder text-8xl uppercase tracking-wide text-right mr-15 mt-[17rem]",
+    class: "font-thunder text-8xl uppercase tracking-wide text-right mr-15 mt-[17rem]",
     transition: "fade-right",
     delay: "500",
   },

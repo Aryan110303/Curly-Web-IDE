@@ -3,14 +3,16 @@ const Button2 = ({ className, href, onClick, children, px, white }) => {
   const spanClasses = "";
 
   const renderButton = () => (
-    <button class={className}>
-      <span class={spanClasses}>{children}</span>
+    <button className={className}>
+      <span className={spanClasses}>{children}</span>
     </button>
   );
 
   const renderLink = () => (
-    <a href={href} className={classes}>
+    <a href={href}>
+      <button className={className}>
       <span className={spanClasses}>{children}</span>
+    </button>
     </a>
   );
 

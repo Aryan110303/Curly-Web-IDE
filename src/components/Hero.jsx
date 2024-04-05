@@ -21,10 +21,10 @@ const Hero = () => {
       </video>
       <div className="hero-content">
         {hero.map((item) => (
-            <h1 className={item.className} data-aos={item.transition} data-aos-delay={item.delay} data-aos-anchor-placement="top top">{item.text}</h1>
+            <h1 key={item.id} className={item.class} data-aos={item.transition} data-aos-delay={item.delay} data-aos-anchor-placement="top top">{item.text}</h1>
             ))}
       </div>
-      <Button2 className="button-primary ml-[37.5rem]" href="">
+      <Button2 className="button-primary ml-[37.5rem] transition-transform hover:translate-y-1" href="#about">
       <i className="fa fa-arrow-down"></i>
       </Button2>
     </div>
