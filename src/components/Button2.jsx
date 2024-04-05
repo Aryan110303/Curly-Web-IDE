@@ -1,11 +1,10 @@
 import React from "react";
 const Button2 = ({ className, href, onClick, children, px, white }) => {
-  const classes = `glow-button`;
   const spanClasses = "";
 
   const renderButton = () => (
-    <button class={classes}>
-      <span class={spanClasses}>Button</span>
+    <button class={className}>
+      <span class={spanClasses}>{children}</span>
     </button>
   );
 
