@@ -14,7 +14,8 @@
 
 @font-face {
     font-family: Thunder;
-    src: url(../src/assets/fonts/Thunder-BlackHC.otf);
+    src: url(../src/assets/fonts/Thunder-BoldLC.otf);
+
 }
 
 @tailwind base;
@@ -100,4 +101,8 @@
 
 .-rotate-360 {
     @apply rotate-[-360deg];
+}
+
+.hero-moon {
+    clip-path: circle(29.28% at 50% 50%);
 }
