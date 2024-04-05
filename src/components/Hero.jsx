@@ -7,10 +7,11 @@ AOS.init();
 
 const Hero = () => {
   return (
-    <div className="hero mt-10">
+    <div className="hero mt-10" id="hero">
+      <div className="video-container flex items-center justify-center">
       <video
         width={800}
-        className="hero-moon absolute left-[15.5rem] top-[9rem] z-10"
+        className="hero-moon  absolute top-[9rem] z-10"
         muted
         autoPlay
         data-aos="zoom-in"
@@ -19,15 +20,19 @@ const Hero = () => {
       >
         <source src={moon} type="video/mp4" />
       </video>
-      <div className="hero-content">
+      </div>
+      <div className="hero-content ">
         {hero.map((item) => (
             <h1 key={item.id} className={item.class} data-aos={item.transition} data-aos-delay={item.delay} data-aos-anchor-placement="top top">{item.text}</h1>
             ))}
       </div>
-      <Button2 className="button-primary ml-[37.5rem] transition-transform hover:translate-y-1" href="#about">
+      <div className="scroll flex justify-center p-4 mb-4">
+      <Button2 className="button-primary transition-transform hover:translate-y-1 flex justify-center" href="#about">
       <i className="fa fa-arrow-down"></i>
       </Button2>
+      </div>
     </div>
+  
   );
 };
 

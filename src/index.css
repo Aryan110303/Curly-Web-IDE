@@ -9,12 +9,12 @@
 
 @font-face {
     font-family: TT-Firs;
-    src: url(../src/assets/fonts/TT\ Firs\ Neue\ Trial\ Regular.ttf);
+    src: url(../src/assets/fonts/TT-Reg.ttf);
 }
 
 @font-face {
     font-family: Thunder;
-    src: url(../src/assets/fonts/Thunder-BoldLC.otf);
+    src: url(../src/assets/fonts/thunder.otf);
 
 }
 
@@ -29,12 +29,12 @@
     color-scheme: dark;
     --m: 2rem;
   
-    --red: #FF6565;
-    --pink: #FF64F9;
-    --purple: #6B5FFF;
-    --blue: #4D8AFF;
-    --green: #5BFF89;
-    --yellow: #FFEE55;
+    --red: #AC6AFF;
+    --pink: #FFC876;
+    --purple: #FF776F;
+    --blue: #7ADB78;
+    --green: #858DFF;
+    --yellow: #FF98E2 ;
     --orange: #FF6D1B;
 }
 
@@ -111,7 +111,12 @@
 .-rotate-360 {
     @apply rotate-[-360deg];
 }
-
+.text-outline {
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #fff;
+    color: transparent !important;
+    transition: 0.2s color;
+}
 .hero-moon {
     clip-path: circle(29.28% at 50% 50%);
 }
@@ -134,10 +139,7 @@
     font-size: calc(var(--m)-1rem);
     border-radius: calc(0.5 * var(--m));
     padding: calc(0.25 * var(--m)) calc(1 * var(--m));
-    display: flex;
-    justify-content: center;
     cursor: pointer;
-    
     background:linear-gradient(#121213, #121213), linear-gradient(#121213 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),  linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
     background-origin: border-box;
     background-clip: padding-box, border-box, border-box;
