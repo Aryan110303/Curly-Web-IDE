@@ -15,7 +15,7 @@ const Header = () => {
         <a className="w-[20rem] xl:mr-8 flex" href="#hero">
           <img src={codeplanet} width={50} height={50} alt="" />
           <span className="font-tt font-bold text-lg tracking-widest ml-5 my-3 transition-colors hover:text-color-1 ">
-            ROHAN SHARMA
+            CODEPLANET STUDIOS
           </span>
         </a>
 

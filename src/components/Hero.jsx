@@ -4,9 +4,8 @@ import Button from "./Button";
 const Hero = () => {
   return (
     <div className="hero">
-      <img src={profile} alt="" />
       <Button className=" " href="#login">
-        Join Us!
+        sTART NOW!
       </Button>
     </div>
   );
