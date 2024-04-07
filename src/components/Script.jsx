@@ -8,7 +8,7 @@ export default function Component() {
             src="./script-add.js"
           ></script>
         </Helmet>
-        ...
+        
       </>
     )
   }
