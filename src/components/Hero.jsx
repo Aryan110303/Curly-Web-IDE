@@ -1,9 +1,6 @@
 import { moon } from "../assets";
 import { hero } from "../constants";
 import Button2 from "./Button2";
-import AOS from "aos";
-import "aos/dist/aos.css";
-AOS.init();
 
 const Hero = () => {
 

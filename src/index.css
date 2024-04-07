@@ -42,6 +42,10 @@
     scroll-behavior: smooth;
 }
 
+html {
+  scroll-behavior: smooth
+}
+
 @layer base {
     body {
         @apply font-sans bg-n-8 text-n-1 text-base;
@@ -481,9 +485,9 @@
   }
   
   .about-text {
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
+    -webkit-animation:flicker 3s ease-in-out infinite alternate;
+    -moz-animation:flicker 3s ease-in-out infinite alternate;
+    animation: flicker 5s ease-in-out infinite alternate;
   }
 
   @keyframes glow {
@@ -494,3 +498,47 @@
       text-shadow: 0 0 10px #ffffff46, 0 0 5px #ffffff46, 0 0 5px #ffffff46, 0 0 5px #ffffff46, 0 0 5px #ffffff46, 0 0 5px #ffffff46, 0 0 5px #ffffff46;
     }
   }
+
+  @keyframes flicker {
+    0%, 20%, 24%, 32%, 50%, 56%, 64%, 100%{
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.2), 0 0 10px rgba(255, 255, 255, 0.2), 0 0 15px rgba(255, 255, 255, 0.2), 0 0 20px rgb(255, 255, 255);
+      color:#fff;
+    }
+    28%, 60% {
+      color: #eeeeee52;
+      text-shadow: none;
+    }
+}
+
+.list-bullet {
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 1vh 4vh 1vh 2vh;
+}
+
+.list-bullet::before {
+  content: "";
+ position: absolute;
+  transform: translate(-5px, -5px);
+  width: 20px;
+  height: 20px;
+  z-index: -1;
+  border-radius: 50%;
+  background-color: #ffffff5d;
+  animation: statusindicator 2s infinite alternate-reverse;
+  
+}
+@keyframes statusindicator {
+    0% {
+      opacity: 1;
+
+    }
+    50% {
+      opacity: 0;
+         }
+    100% {
+      opacity: 1;
+    }
+}
