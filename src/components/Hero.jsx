@@ -5,22 +5,18 @@ import Button2 from "./Button2";
 const Hero = () => {
 
   return (
-    <div className="hero mt-10 " id="hero">
+    <div className="hero md:mt-[4rem] lg:mt-[4rem] xl:mt-[2.5rem]" id="hero">
       <div className="video-container flex items-center justify-center">
         <div className="absolute left-1/2 -translate-x-1/2 top-[22rem] -translate-y-1/2">
-      <video
+      <img
         width={800}
+        src={moon}
         className="hero-moon z-10"
-        muted
-        autoPlay
-        loop="true"
         playsInline
         data-aos="zoom-in"
         data-aos-delay="1000"
         data-aos-anchor-placement="top top"
-      >
-        <source src={moon} type="video/mp4" />
-      </video>
+      />
       </div>
       </div>
       <div className="hero-content ">

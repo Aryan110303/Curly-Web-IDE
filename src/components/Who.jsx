@@ -11,11 +11,11 @@ const Who = () => {
             <div className="w-[60%]">
                 <h1 className="font-tt text-left text-3xl tracking-normal about-text" data-aos="fade-up" data-aos-anchor-placement="top top">
                 An Online IDE which is your ultimate coding companion, designed to empower developers of all levels with a seamless and efficient coding experience.
-                At the heart of CurlyIDE lies a Powerful Code Editor accessible from any device, <strong>anywhere, anytime!</strong>
+                At the heart of CurlyIDE lies a Powerful Code Editor accessible from any device, <strong className="color-transparent">anywhere, anytime!</strong>
                 </h1>
             </div>
             <div className="w-[40%] ">
-                greergkeg
+                
             </div>
             </div>
         </section>
