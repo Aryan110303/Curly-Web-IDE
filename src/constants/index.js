@@ -23,14 +23,14 @@ export const navigation = [
 export const hero = [
   {
     id: "0",
-    text: "A PLANETERIUM SPACE",
-    class: "font-thunder text-[7vw] uppercase tracking-wide mt-6 ml-15 hover:text-outline",
+    text: "BREAK FREE",
+    class: "font-thunder text-[10vw] uppercase tracking-wide mt-6 ml-15 hover:text-outline",
     transition: "fade-left",
     delay: 300,
   },
   {
     id: "1",
-    text: "FOR DEVELOPERS",
+    text: "CODE ON-THE-GO",
     class: "font-thunder text-[7vw] uppercase tracking-wide text-right mr-15 mt-[18rem] md:mt-[28rem] xl:mt-[25rem]",
     transition: "fade-right",
     delay: 500,

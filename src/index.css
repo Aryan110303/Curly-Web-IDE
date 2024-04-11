@@ -2,6 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
 
+::-webkit-scrollbar {
+  background-color: #12121300;
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff54;
+  border-radius: 1vh;
+}
+
 @font-face {
     font-family: null;
     src: url(../src/assets/fonts/Null.otf);
@@ -50,6 +59,15 @@ html {
     body {
         @apply font-sans bg-n-8 text-n-1 text-base;
     }
+}
+.hero-moon{
+  transition: 0s all !important;
+}
+
+.hero-moon.moved {
+  margin-top: 90vh;
+  margin-right: 80vh;
+  transform: scale(0.7) !important;
 }
 
 .rotate-45 {
@@ -494,9 +512,7 @@ box-shadow: 0px 0px 36px 1px rgba(238, 238, 238, 0.185);
   }
   
   .about-text {
-    -webkit-animation:flicker 3s ease-in-out infinite alternate;
-    -moz-animation:flicker 3s ease-in-out infinite alternate;
-    animation: flicker 5s ease-in-out infinite alternate;
+    text-shadow: 0 0 3px #ffffff46, 0 0 3px #ffffff46, 0 0 3px #ffffff46, 0 0 3px #ffffff46, 0 0 3px #ffffff46, 0 0 3px #ffffff46, 0 0 3px #ffffff46;
   }
 
   @keyframes glow {
