@@ -6,7 +6,7 @@ import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
 import { useState } from "react";
 import LoginButton from "./Login";
-
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Header = () => {
   const [openNavigation, setOpenNavigation] = useState(false);
@@ -14,7 +14,7 @@ const Header = () => {
 
   const toggleNavigation = () => {
     if (openNavigation) {
-      setOpenNavigation(false);
+      setOpenNavigation(false);9
       enablePageScroll();
     } else {
       setOpenNavigation(true);
