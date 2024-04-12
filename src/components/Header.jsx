@@ -6,11 +6,14 @@ import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
 import { useState } from "react";
 import LoginButton from "./Login";
-import { useAuth0 } from "@auth0/auth0-react";
+import Profile from "./Profile";
 
 const Header = () => {
   const [openNavigation, setOpenNavigation] = useState(false);
-  const { user, isAuthenticated, isLoading } = useAuth0();
+  
+    if (isLoading) {
+      return <div>Loading ...</div>;
+    }  
 
   const toggleNavigation = () => {
     if (openNavigation) {
@@ -66,10 +69,8 @@ const Header = () => {
         <Button className="hidden lg:flex" href="" linkTo="login">
           Try It!
         </Button>
-        isAuthenticated && (
-      <div>
-        <p>{user.email}</p>
-      </div>
+        <Profile />
+        
     )
         <Button
           className="ml-auto lg:hidden"
