@@ -10,10 +10,6 @@ import Profile from "./Profile";
 
 const Header = () => {
   const [openNavigation, setOpenNavigation] = useState(false);
-  
-    if (isLoading) {
-      return <div>Loading ...</div>;
-    }  
 
   const toggleNavigation = () => {
     if (openNavigation) {
