@@ -16,7 +16,7 @@ const Profile = () => {
     <div>
     {isAuthenticated ? (
       <>
-        <img src={user.picture} alt="User Profile" />
+        <img className="profile-img" width={50} src={user.picture} alt="User Profile" />
         <h2>{user.nickname}</h2>
       </>
     ) : (
