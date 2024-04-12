@@ -13,11 +13,11 @@ const Profile = () => {
   }
 
   return (
-    <div className="flex">
+    <div className="flex justify-center align-center">
     {isAuthenticated ? (
       <>
-        <img className="profile-img mt-2 mb-2" width={50} height={50} src={user.picture} alt="User Profile" />
-        <h2 className="m-4 mt-6 mb-6">Profile</h2>
+        <img className="" width={50} height={50} src={user.picture} alt="User Profile" />
+        <h2 className="">Profile</h2>
       </>
     ) : (
    
