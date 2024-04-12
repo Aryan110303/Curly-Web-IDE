@@ -10,6 +10,7 @@ import LoginButton from "./Login";
 
 const Header = () => {
   const [openNavigation, setOpenNavigation] = useState(false);
+  const { user, isAuthenticated, isLoading } = useAuth0();
 
   const toggleNavigation = () => {
     if (openNavigation) {
@@ -65,7 +66,13 @@ const Header = () => {
         <Button className="hidden lg:flex" href="" linkTo="login">
           Try It!
         </Button>
-
+        isAuthenticated && (
+      <div>
+        <img src={user.picture} alt={user.name} />
+        <h2>{user.name}</h2>
+        <p>{user.email}</p>
+      </div>
+    )
         <Button
           className="ml-auto lg:hidden"
           px="px-3"
