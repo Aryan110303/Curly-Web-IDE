@@ -16,7 +16,7 @@ const Profile = () => {
     <div className="flex">
     {isAuthenticated ? (
       <>
-        <img className="profile-img" width={50} height={50} src={user.picture} alt="User Profile" />
+        <img className="profile-img mt-2 mb-2" width={50} height={50} src={user.picture} alt="User Profile" />
         <h2 className="m-4">Profile</h2>
       </>
     ) : (
