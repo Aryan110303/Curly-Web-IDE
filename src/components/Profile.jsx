@@ -16,8 +16,8 @@ const Profile = () => {
     <div className="flex justify-center align-center">
     {isAuthenticated ? (
       <>
-        <img className="" width={50} height={50} src={user.picture} alt="User Profile" />
-        <h2 className="">Profile</h2>
+        <img className="profile-img" width={50} height={50} src={user.picture} alt="User Profile" />
+        <h2 className="align-middle">Profile</h2>
       </>
     ) : (
    
