@@ -37,4 +37,3 @@ function parallaxed(e) {
         x[i].style.transform='translate(' + amountMovedX + 'px,' + amountMovedY + 'px)'
       }
 }
-

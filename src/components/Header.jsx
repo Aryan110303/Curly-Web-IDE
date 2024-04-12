@@ -62,12 +62,10 @@ const Header = () => {
 
           <HamburgerMenu />
         </nav>
-        <Button className="hidden lg:flex" href="" linkTo="login">
+        {/* <Button className="hidden lg:flex" href="" linkTo="login">
           Try It!
-        </Button>
+        </Button> */}
         <Profile />
-        
-    )
         <Button
           className="ml-auto lg:hidden"
           px="px-3"
@@ -75,7 +73,7 @@ const Header = () => {
         >
           <MenuSvg openNavigation={openNavigation} />
         </Button>
-        <LoginButton />
+        
       </div>
     </div>
     </>
