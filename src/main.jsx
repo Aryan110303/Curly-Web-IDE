@@ -30,7 +30,7 @@ const router = createBrowserRouter([
     )
       },
       {
-        path: "/login",
+        path: "/editor",
         element: (
             <React.StrictMode>
               <Auth0Provider
