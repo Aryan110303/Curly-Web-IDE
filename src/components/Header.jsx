@@ -5,6 +5,7 @@ import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
 import { useState } from "react";
+import LoginButton from "./Login";
 
 
 const Header = () => {
@@ -61,7 +62,7 @@ const Header = () => {
 
           <HamburgerMenu />
         </nav>
-        <Button className="hidden lg:flex" href="" linkTo="editor">
+        <Button className="hidden lg:flex" href="" linkTo="login">
           Try It!
         </Button>
 
@@ -72,6 +73,7 @@ const Header = () => {
         >
           <MenuSvg openNavigation={openNavigation} />
         </Button>
+        <LoginButton />
       </div>
     </div>
     </>
