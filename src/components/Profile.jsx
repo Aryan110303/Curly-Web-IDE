@@ -9,7 +9,7 @@ const Profile = () => {
 
 
   if (isLoading) {
-    return <div>Loading ...</div>;
+    return <div>Please Wait...</div>;
   }
 
   return (
@@ -17,7 +17,7 @@ const Profile = () => {
     {isAuthenticated ? (
       <>
         <img src={user.picture} alt="User Profile" />
-        <h2>{user.name}</h2>
+        <h2>{user.nickname}</h2>
       </>
     ) : (
    
