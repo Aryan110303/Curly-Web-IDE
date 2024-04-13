@@ -10,7 +10,7 @@ const Editor = () => {
           Logout
           </h1>
       ) : (
-        <meta http-equiv = "refresh" content = {"url=" + loginWithRedirect()} />
+        not
       )}
       </div>
   );
