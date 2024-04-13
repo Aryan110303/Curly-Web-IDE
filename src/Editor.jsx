@@ -12,7 +12,8 @@ const Editor = () => {
     {isAuthenticated ? (
         <IDE />
       ) : (
-        <Fail />
+        // <Fail />
+        <IDE />
       )}
       </div>
   );

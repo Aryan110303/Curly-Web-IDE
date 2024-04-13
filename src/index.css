@@ -597,3 +597,9 @@ box-shadow: 0px 0px 36px 1px rgba(238, 238, 238, 0.185);
   border: 1px solid #696969;
   border-radius: 1rem;
 }
+.master-container {
+  display: flex;
+}
+.sidebar {
+  resize: horizontal;
+}
