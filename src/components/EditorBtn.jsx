@@ -1,17 +1,25 @@
 import React from "react";
-
-const Button2 = ({ className, href, onClick, children, px, white }) => {
+import {
+    createBrowserRouter,
+    RouterProvider,
+    Route,
+    Link,
+  } from "react-router-dom";
+  
+const EditorBtn = ({ className, href, onClick, children, px, white, linkTo }) => {
   const spanClasses = "";
 
   const renderButton = () => (
-    <button className={className}>
+    <Link to={linkTo}>
+    <button className="editor-button p-2 pl-4 pr-4" onClick={onClick}>
       <span className={spanClasses}>{children}</span>
     </button>
+    </Link>
   );
 
   const renderLink = () => (
     <a href={href}>
-      <button className={className}>
+      <button className="editor-button">
       <span className={spanClasses}>{children}</span>
     </button>
     </a>
@@ -20,4 +28,4 @@ const Button2 = ({ className, href, onClick, children, px, white }) => {
   return href ? renderLink() : renderButton();
 };
 
-export default Button2;
+export default EditorBtn;

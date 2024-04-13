@@ -1,7 +1,7 @@
 import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import LoginButton from "./components/Login";
-import Button from "./components/Button";
+import EditorBtn from "./components/EditorBtn";
 
 
 const Editor = () => {
@@ -11,13 +11,12 @@ const Editor = () => {
     <div>
     {isAuthenticated ? (
         <>
-          <Button linkTo="/">
+          <EditorBtn  linkTo="/">
               Back
-          </Button>
+          </EditorBtn>
         </>
       ) : (
-     
-             <LoginButton>Try it!</LoginButton>
+        <meta http-equiv = "refresh" content = {"url=" + loginWithRedirect()} />
       )}
       </div>
   );
