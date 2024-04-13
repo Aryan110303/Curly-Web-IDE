@@ -10,9 +10,11 @@ const Editor = () => {
   return (
     <div>
     {isAuthenticated ? (
-          <IDE />
+          <h1>
+          Logout
+          </h1>
       ) : (
-        <Fail />
+        <meta http-equiv = "refresh" content = {"url=" + loginWithRedirect()} />
       )}
       </div>
   );
