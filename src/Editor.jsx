@@ -1,22 +1,18 @@
 import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import LoginButton from "./components/Login";
-import EditorBtn from "./components/EditorBtn";
+import Fail from "./components/Fail";
+import IDE from "./components/IDE";
 
 
 const Editor = () => {
-    const { user, isAuthenticated, isLoading } = useAuth0();
-    const { loginWithRedirect } = useAuth0();
+    const {isAuthenticated} = useAuth0();
   return (
     <div>
     {isAuthenticated ? (
-        <>
-          <EditorBtn  linkTo="/">
-              Back
-          </EditorBtn>
-        </>
+          <IDE />
       ) : (
-        <meta http-equiv = "refresh" content = {"url=" + loginWithRedirect()} />
+        <Fail />
       )}
       </div>
   );
