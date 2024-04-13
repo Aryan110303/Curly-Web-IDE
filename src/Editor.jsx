@@ -9,13 +9,9 @@ const Editor = () => {
     const { loginWithRedirect } = useAuth0();
   return (
     <div>
-    {isAuthenticated ? (
           <EditorBtn  linkTo="/">
               Back
           </EditorBtn>
-      ) : (
-        <meta http-equiv = "refresh" content = {"url=" + loginWithRedirect()} />
-      )}
       </div>
   );
 };
