@@ -10,7 +10,7 @@ const Editor = () => {
           Logout
           </h1>
       ) : (
-        not
+        <h1>hi</h1>
       )}
       </div>
   );
