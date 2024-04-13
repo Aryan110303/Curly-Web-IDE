@@ -1,7 +1,7 @@
 import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
-import LoginButton from "./components/Login";
-import EditorBtn from "./components/EditorBtn";
+import IDE from "./components/IDE";
+import Fail from "./components/Fail";
 
 
 const Editor = () => {
@@ -9,9 +9,11 @@ const Editor = () => {
     const { loginWithRedirect } = useAuth0();
   return (
     <div>
-          <EditorBtn  linkTo="/">
-              Back
-          </EditorBtn>
+    {isAuthenticated ? (
+        <IDE />
+      ) : (
+        <Fail />
+      )}
       </div>
   );
 };
