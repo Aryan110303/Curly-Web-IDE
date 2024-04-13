@@ -5,13 +5,16 @@ const Editor = () => {
     const { loginWithRedirect } = useAuth0();
   return (
     <div>
+      <>
     {isAuthenticated ? (
           <h1>
           Logout
           </h1>
       ) : (
         <h1>hi</h1>
-      )}
+      )
+    }
+    </>
       </div>
   );
 };
