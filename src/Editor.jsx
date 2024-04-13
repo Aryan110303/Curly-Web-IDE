@@ -4,8 +4,8 @@ const Editor = () => {
     const { isAuthenticated } = useAuth0();
     const { loginWithRedirect } = useAuth0();
   return (
+    <>
     <div>
-      <>
     {isAuthenticated ? (
           <h1>
           Logout
@@ -14,8 +14,8 @@ const Editor = () => {
         <h1>hi</h1>
       )
     }
-    </>
       </div>
+  </>
   );
 };
 
