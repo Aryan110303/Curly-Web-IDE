@@ -1,5 +1,7 @@
+import { useAuth0 } from "@auth0/auth0-react";
+
 const Editor = () => {
-    const {isAuthenticated} = useAuth0();
+    const { isAuthenticated } = useAuth0();
     const { loginWithRedirect } = useAuth0();
   return (
     <div>
