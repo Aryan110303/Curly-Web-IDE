@@ -5,7 +5,7 @@ import Fail from "./components/Fail";
 
 
 const Editor = () => {
-    const { user, isAuthenticated, isLoading } = useAuth0();
+    const { isAuthenticated, isLoading } = useAuth0();
     const { loginWithRedirect } = useAuth0();
   return (
     <div>
